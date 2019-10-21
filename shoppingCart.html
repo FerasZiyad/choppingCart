@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ShoppingCart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="shoppingCart.css">
+</head>
+
+<body>
+    <header>
+        <div class="navheader">
+            <div class="container">
+                <div class="dropdown show">
+                    <a class="btn btn-dark dropdown-toggle choose-country" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        United Kingdom
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item usa" href="#">USA</a>
+                        <a class="dropdown-item canada" href="#">United Kingdom</a>
+                        <a class="dropdown-item turkey" href="#">Turkey</a>
+                    </div>
+                </div>
+                <a class="nav-link text-light reg" href="#">SIGNIN</a>
+                <a class="nav-link text-light reg" href="#">WISHLIST</a>
+            </div>
+        </div>
+            
+       
+
+        
+    </header>
+    <!--  ================================================================================================================== -->
+
+    <div>
+        <ul></ul>
+        <ul></ul>
+    </div>
+    <div class="categories2">
+        <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--  ================================================================================================================== -->
+
+    <div class="chooseOrder">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 first-tab">
+                    <p class="tabs ">FREE NEXT DAY DEVIVERY</p>
+                </div>
+                <div class="col-md-4 second-tab active">
+                    <p class="tabs ">SALE NOW UP TO 50%</p>
+                </div>
+                <div class="col-md-4 third-tab">
+                    <p class="tabs third-tab">FREE RETURNS TO STORE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="message-no-order">there is no order</h1>
+    <button class="add-order">Add the old order</button>
+
+    <div class="shoppingcart">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8 ">
+                    <h3 class="shoppinglist-title">Shopping Cart</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="product-detail-title">PRODUCT DETAILS</th>
+                                <th scope="col" class="product-detail-title"></th>
+                                <th scope="col" class="product-detail-title">QUANTITY</th>
+                                <th scope="col" class="product-detail-title">PRICE</th>
+                                <th scope="col" class="product-detail-title">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="photo"><img class="guy" src="guy.png"></td>
+                                <td>
+                                    <ul class="person-info">
+                                        <li class="info person-info-txt">Hommed Light Jumber</li>
+                                        <li class="info"><span class="general-info">SIZE </span>&nbsp;&nbsp;<span class="person-info-txt">XS</span></li>
+                                        <li class="info"><span class="general-info">COLOUR</span>&nbsp; &nbsp;<span class="person-info-txt">NAVI</span></li>
+                                        <li class="info"> <span class="general-info">Product Code</span>&nbsp;&nbsp; 185721</li>
+                                    </ul>
+                                </td>
+                                <td class="input-quantity">
+                                    <ul class="price">
+                                        <li>
+                                            <input class="quantity" type="number" name="quantity">
+                                        </li>
+                                        <li class="remove">
+                                            <a class="remove-link" href="#">REMOVE</a>
+                                        </li>
+                                    </ul>
+                                </td>
+
+                                <td class="price">£35.00</td>
+                                <td class="price">
+                                    <ul class="total-result">
+                                        <li class="total-value">
+                                            £70.00
+                                        </li>
+                                        <li class="total-btn edit-btn">
+                                            <a href="#">EDIT</a>
+                                        </li>
+                                        <li class="total-btn">
+                                            <a href="#">SAVE FOR LATER</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <a class="countinuShopping" href="#">CONTINUE SHOPPING</a>
+                </div>
+                <!-- --------------------------------------------------------- -->
+                <div class="col-xs-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12
+                 col-xl-3 order-summary">
+                    <h3 class="order-summary-title">ORDER SUMMARY</h3>
+                    <hr>
+                    <p>ITEMS <span class="item-number">0</span><span class="total-price">£00,00</span></p>
+                    <p>SHIPPING</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-white text-dark delivery" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Standard Delivery -£4,00
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item standard-delivery" href="#">Standard Delivery -£4,00</a>
+                            <a class="dropdown-item fast-delivery" href="#">Fast Delivery -£6,00</a>
+                            <a class="dropdown-item no-delivery" href="#">you take the order -£0.00</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="total-cost">TOTAL COST <span class="total-price">£74.00</span></h5>
+                    <button type="button" class="btn btn-dark checkout">CHECKOUT</button>
+                    <p class="promotionalCode">PROMPTIONAL CODE
+                        <button class="plus-sign"><span class="plus-sign"><img src="add.png"></span></button>
+                        <input type="text" class="discount-code">
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- ------------------------------------------------- -->
+    </div>
+    </div>
+    <div class="mail">
+        <div class="container cont-mail">
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="sign-text">Sign up to our Newsletter and you'll get
+                        <br>weekly offers sent to your email</p>
+                </div>
+                <div class="col-md-7">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control pr-sm-3" type="search" placeholder="Your Email Address">
+                        <button class="btn btn-dark" type="submit"> SUBMIT </button>
+                    </form>
+                    <!-- <div class="form-group">
+                                <input type="email" class="form-control email-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Address">
+                                <button type="button" class="btn btn-dark submit">Dark</button>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-2 mx-auto mx-auto">
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">COMPANEY</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#!">Locate Store</a>
+                        </li>
+                        <li>
+                            <a href="#!">News</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none mx-auto">
+                <div class="col-md-2 mx-auto">
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">HELP</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Returns</a>
+                        </li>
+                        <li>
+                            <a href="#!">Shipping info</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#!">Size Guide</a>
+                        </li>
+                        <li>
+                            <a href="#!">Track Orders</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <hr class="clearfix w-100 d-md-none mx-auto">
+                <div class="col-md-2 mx-auto">
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">LEGAL</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms & Canditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">Cookies & Security</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <hr class="clearfix w-100 d-md-none mx-auto">
+                <div class="col-md-2 mx-auto">
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">ADDRESS</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">15 Grand Street</a>
+                        </li>
+                        <li>
+                            <a href="#!">Manchester.M1 !SA</a>
+                        </li>
+                        <li>
+                            <a href="#!">0800 000 000</a>
+                        </li>
+                        <li>
+                            <a href="#!">info@companey.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none mx-auto">
+                <div class="col-md-2 mx-auto">
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">FOLLOW US</h6>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><img src="instagram.png"> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="facebook.png"> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="twitter.png"> Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container text-center text-md-left copy-write">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <a class="font-weight-bold text-uppercase mt-3 mb-4 footer-title"><a href="">© 2016 Copyright. Inc. All rights reserved</a></a>
+
+                </div>
+            </div>                
+        </div>
+
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-copyright text-center py-3">© 2016 Copyright.
+                        <a href="#">Inc. All rights reserved </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!--  ================================================================================================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jQuery.js"></script>
+    <script src='shoppingCart.js'></script>
+</body>
+
+</html>
